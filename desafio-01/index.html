@@ -1,0 +1,49 @@
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Churrascômetro</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="./assets/icone-de-churrasco.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div id="root">
+            <div class="container">
+                <h1>Churrascômetro</h1>
+                <div class="calculator">
+                    <h3>Precisa de uma ajudinha com o churrasco? :) <br><br> Quantas pessoas vão participar?</h3>
+                    <div class="counters">
+                        <div class="counter">
+                            <label for="Homens">Homens</label>
+                            <input type="number" id="Homens" value="0">
+                            <div class="button-group">
+                                <button class="input-group__button--small" onclick="decremento('homens')">-</button>
+                                <button class="input-group__button--small" onclick="incremento('homens')">+</button>
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <label for="Mulheres">Mulheres</label>
+                            <input type="number" id="Mulheres" value="0">
+                            <div class="button-group">
+                                <button class="input-group__button--small" onclick="decremento('mulheres')">-</button>
+                                <button class="input-group__button--small" onclick="incremento('mulheres')">+</button>
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <label for="Crianças">Crianças</label>
+                            <input type="number" id="Criancas" value="0">
+                            <div class="button-group">
+                                <button class="input-group__button--small" onclick="decremento('criancas')">-</button>
+                                <button class="input-group__button--small" onclick="incremento('criancas')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a href="calcular.html" class="default-button">Calcular</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script1.js"></script>
+    </body>
+</html>
